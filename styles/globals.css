@@ -1,5 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Jost');
 
+:root {
+    /* --------- BACKGROUNDS ---------*/
+    --main-BG: #454141;
+    --login-BG: linear-gradient(0deg, #3D3366, rgba(27,30,60, 0.3));
+
+    /* --------- TEXT COLORS ---------*/
+    --white-txt: #fff;
+    --black-txt: #000;
+    --grey-txt: #36454F; /* Mainly used for text holders */
+    --lighter-grey-txt: #636360; /* For darker backgrounds */
+
+    /* --------- COMPONENT COLORS ---------*/
+    --nav: #343434;
+    --sbar: #252323; /* sbar --> sidebar */
+    --sbar-boxes: #2D2D2A;
+    --sbar-grid: #40403D;
+    --cur-pg: #282727;
+    --cur-pg-UND: #615F5F;
+    --login-box: rgba(134, 139, 181, 0.8);
+    --login-btn: rgba(255, 255, 255, 0.71);
+    --sign-btn: #373E73;
+
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    color: var(--white-txt);
+}
+
 /* --------------- NAVIGATION ------------------ */
 
 /* .main-link {
@@ -7,7 +36,6 @@
 
 .dashboard, .components, .forms {
     font-size: 15.6px;
-    font-family: 'Jost', sans-serif;
 }
 
 /* ----------------- CONTENT BOX ----------------- */
@@ -19,12 +47,10 @@
 
 .title {
     font-size:6px;
-    font-family: 'Jost', sans-serif;
 }
 
 .text {
     font-size: 12px;
-    font-family: 'Jost', sans-serif;
 }
 
 /* ----------------- FORM BOX --------------------- */
