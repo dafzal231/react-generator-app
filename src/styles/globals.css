@@ -2,7 +2,7 @@
 
 :root {
     /* --------- BACKGROUNDS ---------*/
-    --main-BG: #454141;
+    --main-BG: #363B64;
     --login-BG: linear-gradient(0deg, #3D3366, rgba(27,30,60, 0.3));
 
     /* --------- TEXT COLORS ---------*/
@@ -12,16 +12,19 @@
     --lighter-grey-txt: #636360; /* For darker backgrounds */
 
     /* --------- COMPONENT COLORS ---------*/
-    --nav: #343434;
+    --nav: #5B6196;
     --sbar: #252323; /* sbar --> sidebar */
-    --sbar-boxes: #2D2D2A;
-    --sbar-grid: #40403D;
-    --cur-pg: #282727;
-    --cur-pg-UND: #615F5F;
+    --sbar-boxes: #373E73;
+    --sbar-grid: #5A63AD;
+    --cur-pg: #868BB5;
+    --cur-pg-UND: #D9D9D9;
     --login-box: rgba(134, 139, 181, 0.8);
     --login-btn: rgba(255, 255, 255, 0.71);
     --sign-btn: #373E73;
+}
 
+html {
+    background-color: var(--main-BG);
 }
 
 body{
@@ -29,10 +32,50 @@ body{
     color: var(--white-txt);
 }
 
+div{
+    border-radius: 10px;
+}
+
 /* --------------- NAVIGATION ------------------ */
 
-/* .main-link {
-} */
+.nav {
+    background-color: var(--nav);
+    opacity: 0.5;
+    width: 100%;
+    height: 80px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 80px;
+}
+
+.title{
+    opacity: 1;
+    height: 100%;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.titleElement{
+    color: white;
+}
+
+.icons{
+    width: 140px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column: 3;
+
+    /* position: absolute; */
+    /* left: 88%; */
+}
 
 .dashboard, .components, .forms {
     font-size: 15.6px;
