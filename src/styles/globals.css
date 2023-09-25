@@ -2,11 +2,11 @@
 
 :root {
     /* --------- BACKGROUNDS ---------*/
-    --main-BG: #363B64;
+    --main-BG: #4A4C82;
     --login-BG: linear-gradient(0deg, #3D3366, rgba(27,30,60, 0.3));
 
     /* --------- TEXT COLORS ---------*/
-    /* --white-txt: #fff; */
+    --white-txt: #fff;
     --black-txt: #000;
     --grey-txt: #36454F; /* Mainly used for text holders */
     --lighter-grey-txt: #636360; /* For darker backgrounds */
@@ -29,7 +29,7 @@ html {
 
 body{
     font-family: 'Jost', sans-serif;
-    color: white;
+    color: var(--white-txt);
 }
 
 div{
@@ -72,13 +72,14 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: white; */
-}
-
-/* .titleElement{
+    font-size: 16px; 
     color: white;
 }
- */
+
+.titleElement{
+    color: #fff;
+}
+
 .icons{
     width: 140px;
     height: 100%;
@@ -117,18 +118,21 @@ div{
 
 /* ----------------- DROP DOWN BOX ----------------- */
 
-
-/* ------------------ MAIN PAGE --------------------*/
 .generator {
-    display:flex;
-    background-color:#868BB5CC;
-    height: 1000px;
-    width: 1200px;
-    float: right;
+    display: flex;
+    background-color: #868BB5CC;
+    height: 1000px; 
+    width: 1200px; 
+    max-width: 1300px; 
+    margin: 40px; 
     padding: 20px;
-    margin: 40px;
+    float:right;
 }
 
-.options {
-    
+.computer-img {
+    background-image: url('../images/laptop.png');
+    width: 100px;
+    height: 50px;
 }
+
+

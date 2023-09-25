@@ -5,10 +5,9 @@ function App() {
   return (
     <div className="app">
       <Nav></Nav>
-      <div className = "generator">
-        <div className = "options"></div>
+      <div className = "generator"></div>
+        
       </div>
-  
     </div>
   );
 }
