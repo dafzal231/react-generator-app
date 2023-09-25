@@ -4,10 +4,12 @@ import Generator from "./components/Generator.jsx";
 
 function App() {
   return (
-    <div className="app">
+    <>
+      <div className="app">
       <Nav></Nav>
       <Generator></Generator>
     </div>
+    </>
   );
 }
 
