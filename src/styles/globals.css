@@ -6,7 +6,7 @@
     --login-BG: linear-gradient(0deg, #3D3366, rgba(27,30,60, 0.3));
 
     /* --------- TEXT COLORS ---------*/
-    --white-txt: #fff;
+    /* --white-txt: #fff; */
     --black-txt: #000;
     --grey-txt: #36454F; /* Mainly used for text holders */
     --lighter-grey-txt: #636360; /* For darker backgrounds */
@@ -29,7 +29,7 @@ html {
 
 body{
     font-family: 'Jost', sans-serif;
-    color: var(--white-txt);
+    color: white;
 }
 
 div{
@@ -67,14 +67,13 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px; 
+    /* color: white; */
+}
+
+/* .titleElement{
     color: white;
 }
-
-.titleElement{
-    color: #fff;
-}
-
+ */
 .icons{
     width: 140px;
     height: 100%;
@@ -116,3 +115,18 @@ div{
 
 /* ----------------- DROP DOWN BOX ----------------- */
 
+
+/* ------------------ MAIN PAGE --------------------*/
+.generator {
+    display:flex;
+    background-color:#868BB5CC;
+    height: 1000px;
+    width: 1200px;
+    float: right;
+    padding: 20px;
+    margin: 40px;
+}
+
+.options {
+    
+}

@@ -18,7 +18,7 @@ const Nav = () => {
             </div>
 
             <div className='title'>
-            <Title style={{ color: 'white' }}>React Generator App</Title>
+                <Title style = {{color: 'white'}}>React Generator App</Title>
             </div>
 
             <div className='icons'>
