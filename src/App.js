@@ -3,10 +3,8 @@ import Nav from "./components/generic/nav";
 
 function App() {
   return (
-    <div className="App">
-      <Nav>
-
-      </Nav>
+    <div className="app">
+      <Nav></Nav>
       <div className = "generator">
         <div className = "options"></div>
       </div>
