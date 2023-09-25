@@ -13,7 +13,7 @@
 
     /* --------- COMPONENT COLORS ---------*/
     --nav: #5B6196;
-    --sbar: #252323; /* sbar --> sidebar */
+    --sbar: #363B64; /* sbar --> sidebar */
     --sbar-boxes: #373E73;
     --sbar-grid: #5A63AD;
     --cur-pg: #868BB5;
@@ -23,13 +23,13 @@
     --sign-btn: #373E73;
 }
 
-html {
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: var(--main-BG);
-}
-
-body{
-    font-family: 'Jost', sans-serif;
     color: var(--white-txt);
+    font-family: 'Jost', sans-serif;
 }
 
 div{
@@ -40,6 +40,8 @@ div{
 
 .app{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav {
@@ -119,14 +121,30 @@ div{
 /* ----------------- DROP DOWN BOX ----------------- */
 
 .generator {
+    /* background-color: #868BB5CC; */
+    height: 100%;
+    margin: 50px; 
+}
+
+.gen-layout {
+    width: 100%;
+    height: 100%;
     display: flex;
-    background-color: #868BB5CC;
-    height: 1000px; 
-    width: 1200px; 
-    max-width: 1300px; 
-    margin: 40px; 
-    padding: 20px;
-    float:right;
+
+    display: grid;
+    grid-template-columns: 3.5fr 6fr;
+    grid-template-rows: 100%;
+    grid-gap: 40px;
+}
+
+.dashboard {
+    background-color: var(--sbar);
+    padding: 40px;
+}
+
+.viewer {
+    padding: 40px;
+    background-color: var(--cur-pg);
 }
 
 .computer-img {
@@ -134,5 +152,3 @@ div{
     width: 100px;
     height: 50px;
 }
-
-

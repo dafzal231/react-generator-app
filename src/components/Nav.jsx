@@ -1,12 +1,12 @@
 import React from 'react'
-import "../../styles/globals.css";
+import "../styles/globals.css";
 
 import { Link } from 'react-router-dom';
-import { navBar } from "../../constants/constants.js";
+import { navBar } from "../constants/constants.js";
 
 import { Avatar, Typography } from 'antd';
 import { UserOutlined, BellOutlined } from '@ant-design/icons';
-import logo from './logo.png'
+import logo from '../images/logo.png'
 
 const {Text, Title} = Typography;
 
