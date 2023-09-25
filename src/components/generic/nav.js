@@ -6,15 +6,19 @@ import { navBar } from "../../constants/constants.js";
 
 import { Avatar, Typography } from 'antd';
 import { UserOutlined, BellOutlined } from '@ant-design/icons';
+import logo from './logo.png'
 
-const { Title } = Typography;
+const {Text, Title} = Typography;
 
 const Nav = () => {
     return (
         <div className="nav">
+            <div className='icon'>
+                <img class="img" src={logo} alt="Icon"/>
+            </div>
 
             <div className='title'>
-                <Title style={{color: 'white', opacity: 1}}>React Geneator App</Title>
+            <Title style={{ color: 'white' }}>React Generator App</Title>
             </div>
 
             <div className='icons'>

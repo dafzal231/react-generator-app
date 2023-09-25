@@ -40,7 +40,6 @@ div{
 
 .nav {
     background-color: var(--nav);
-    opacity: 0.5;
     width: 100%;
     height: 80px;
     border-top-right-radius: 0;
@@ -51,18 +50,29 @@ div{
     grid-template-rows: 80px;
 }
 
+.icon{
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    height: 65%;
+}
+
 .title{
-    opacity: 1;
     height: 100%;
     grid-column: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px; 
     color: white;
 }
 
 .titleElement{
-    color: white;
+    color: #fff;
 }
 
 .icons{
