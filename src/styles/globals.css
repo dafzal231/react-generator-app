@@ -145,25 +145,12 @@ div{
 .viewer {
     padding: 40px;
     background-color: var(--cur-pg);
-    background-color: #868BB5CC;
-    justify-content: space-between;
 }
 
-.images-1 {
-    display: flex;
-}
-
-.images-2 {
-    display: flex;
-}
-
-.img:nth-child(1),
-.img:nth-child(2),
-.img:nth-child(3)  {
-    flex-basis: calc(30% / 3);
-    margin: 10px; 
-    height: auto;
-    height: 55px;
+.computer-img {
+    background-image: url('../images/laptop.png');
+    width: 100px;
+    height: 50px;
 }
 
 .img:nth-child(4),
@@ -172,3 +159,13 @@ div{
     justify-content:space-evenly;
 }
 
+
+.ant-select-selector {
+    background-color: #5B6196 !important;
+}
+
+/* .custom-select option {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+} */
