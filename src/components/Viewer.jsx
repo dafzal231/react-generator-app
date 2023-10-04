@@ -5,8 +5,15 @@ import phone from '../images/phone.png';
 import ipad from '../images/ipad.png';
 import code from '../images/preview.png';
 import sizing from '../images/sizing.png';
+import { Button } from "antd";
+import { useSelector } from "react-redux";
 
 const Viewer = () => {
+
+    const { disabled, danger, loading, ghost, size, shape } = useSelector((state) => state.button)
+
+    console.log(size)
+
 
     return (
         <div className="viewer">
@@ -37,6 +44,7 @@ const Viewer = () => {
                 <img class="img" src={code} alt="Icon"/>
                 </div> 
             </div>
+            <Button disabled={disabled} danger={danger} loading={loading} ghost={ghost} size={size} shape={shape}>Click Me</Button>
         </div>
       </div>
 

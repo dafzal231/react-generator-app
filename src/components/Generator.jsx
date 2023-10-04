@@ -12,8 +12,8 @@ const Generator = () => {
     return (
         <div className="generator">
 			<div className="gen-layout">
-				<Dashboard>Hey</Dashboard>
-				<Viewer>Hey</Viewer>
+				<Dashboard></Dashboard>
+				<Viewer></Viewer>
 			</div>
         </div>
     )
