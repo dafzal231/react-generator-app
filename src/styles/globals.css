@@ -145,20 +145,8 @@ div{
 .viewer {
     padding: 40px;
     background-color: var(--cur-pg);
+    text-align: right;
 }
-
-.computer-img {
-    background-image: url('../images/laptop.png');
-    width: 100px;
-    height: 50px;
-}
-
-.img:nth-child(4),
-.img:nth-child(5) {
-    flex-basis: calc(40% / 2);
-    justify-content:space-evenly;
-}
-
 
 .ant-select-selector {
     background-color: #5B6196 !important;
