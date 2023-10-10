@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  buttonType: 'default',
+  type: 'default',
   danger: false,
   disabled: false,
   ghost: false,
@@ -16,8 +16,7 @@ export const buttonSlice = createSlice({
   initialState,
   reducers: {
     buttonType: (state, action) => {
-        console.log(action)
-        state.buttonType = action.payload      
+        state.type = action.payload      
     },
     dangerOn: (state) => {
         state.danger = true
@@ -47,10 +46,9 @@ export const buttonSlice = createSlice({
       state.shape = action.payload
     },
     buttonSize: (state, action) => {
-      console.log(action)
         state.size = action.payload
     },
-    addIcon: (state, action) => {
+    setIcon: (state, action) => {
         state.icon = action.payload
     },
   },
@@ -69,7 +67,7 @@ export const {
     loadingOn,
     buttonShape,
     buttonSize,
-    addIcon 
+    setIcon, 
 } = buttonSlice.actions
 
 export default buttonSlice.reducer

@@ -10,9 +10,11 @@ const Dashboard = () => {
         <div className="dashboard">
             <SelectInput></SelectInput>
 
-            <RadioInput options={['large', 'middle', 'small']} type='buttonSize'/>
+            <RadioInput options={['middle', 'large', 'small']} type='buttonSize'/>
 
             <RadioInput options={['default', 'circle', 'round']} type='buttonShape'/>
+
+            <RadioInput options={['default', 'dashed', 'link', 'text', 'primary']} type='buttonType'/>
 
         </div>
     )

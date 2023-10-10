@@ -12,6 +12,7 @@ const RadioInput = ({options, type}) => {
         console.log(e.target.value);
 
         if (type === 'buttonType') {
+            console.log(e.target.value)
             dispatch(buttonType(e.target.value))
         }
         else if (type === 'buttonShape') {
@@ -23,7 +24,7 @@ const RadioInput = ({options, type}) => {
     }
 
     return (
-        <Radio.Group buttonStyle="solid" onChange={onChange}>
+        <Radio.Group buttonStyle="solid" defaultValue={options[0]} onChange={onChange}>
             {options.map((option) => {
                 return (
                     <Radio.Button value={option}>{option}</Radio.Button>
