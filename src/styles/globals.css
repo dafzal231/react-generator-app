@@ -201,8 +201,16 @@ div{
     height: 100%;
 }
 
-.container {
-    display:grid;
+.login-container {
+    width: 800px;
+    background-color: #868BB5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+    align-content:center;
+    margin-top: 150px;;
 }
 
 .company-title {
@@ -326,4 +334,24 @@ div{
 
 .ant-select-selector {
     background-color: #5B6196 !important;
+}
+
+.paragraph {
+    width: 650px; 
+    margin: 0 auto;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    word-break: break-word; 
+    text-align: center; 
+}
+
+.trynow-btn {
+    background-color: #373E73;
+    width: 122px;
+    height: 42px;
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    font-size: 12px;
 }
