@@ -312,6 +312,8 @@ div{
 
 .description {
     display:block;
+}
+
 .dropdown:hover .dropdown-menu {
     display: flex;
     flex-direction: column; /* Arrange items vertically */
