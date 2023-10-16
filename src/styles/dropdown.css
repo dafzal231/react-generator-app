@@ -1,0 +1,77 @@
+.dropdown-wapper {
+    margin-bottom: 1.2rem 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.drop-title {
+
+    /* box styling */
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 7px;
+
+    /* font styling */
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: left;
+
+    /* Colors */
+    background: var(--sbar-boxes);
+
+    /* Animation */
+    transition: all 0.25s ease-out;
+}
+
+/* ------------ ANIMATIONS -------------*/
+.drop-title:hover {
+    background: #1E1E1C;
+}
+
+
+.drop-title::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+}
+
+/* For arrow */
+.toggle:checked + .drop-title::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .drop-title + .collapsible-content {
+    max-height: 5vh;
+}
+
+.toggle:checked + .drop-title{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+    background: #2d2d2a;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+  }
+  
+  

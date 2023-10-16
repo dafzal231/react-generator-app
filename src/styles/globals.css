@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Jost');
+
+:root {
+    /* --------- BACKGROUNDS ---------*/
+    --main-BG: #4A4C82;
+    --login-BG: linear-gradient(0deg, #3D3366, rgba(27,30,60, 0.3));
+
+    /* --------- TEXT COLORS ---------*/
+    --white-txt: #fff;
+    --black-txt: #000;
+    --grey-txt: #36454F; /* Mainly used for text holders */
+    --lighter-grey-txt: #636360; /* For darker backgrounds */
+
+    /* --------- COMPONENT COLORS ---------*/
+    --nav: #5B6196;
+    --sbar: #363B64; /* sbar --> sidebar */
+    --sbar-boxes: #373E73;
+    --sbar-grid: #5A63AD;
+    --cur-pg: #868BB5;
+    --cur-pg-UND: #D9D9D9;
+    --login-box: rgba(134, 139, 181, 0.8);
+    --login-btn: rgba(255, 255, 255, 0.71);
+    --sign-btn: #373E73;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--main-BG);
+    color: var(--white-txt);
+    font-family: 'Jost', sans-serif;
+}
+
+div{
+    border-radius: 10px;
+}
+
+/* --------------- NAVIGATION ------------------ */
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    background-color: var(--nav);
+    width: 100%;
+    height: 80px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: grid;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 80px;
+}
+
+.icon{
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    height: 65%;
+}
+
+.title{
+    height: 100%;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; 
+    color: white;
+}
+
+.titleElement{
+    color: #fff;
+}
+
+.icons{
+    width: 140px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column: 3;
+}
+
+.dashboard, .components, .forms {
+    font-size: 15.6px;
+}
+
+/* ----------------- CONTENT BOX ----------------- */
+
+.box {
+    width: 300px;
+    height: 400px;
+}
+
+.title {
+    font-size:6px;
+}
+
+.text {
+    font-size: 12px;
+}
+
+/* ----------------- FORM BOX --------------------- */
+
+.form-box {
+    height: 51px;
+    width: 272px;
+    align-content: center;
+}
+
+/* ----------------- DROP DOWN BOX ----------------- */
+
+.generator {
+    /* background-color: #868BB5CC; */
+    height: 100%;
+    margin: 50px; 
+}
+
+.gen-layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    display: grid;
+    grid-template-columns: 3.5fr 6fr;
+    grid-template-rows: 100%;
+    grid-gap: 40px;
+}
+
+.dashboard {
+    background-color: var(--sbar);
+    padding: 40px;
+}
+
+.viewer {
+    padding: 40px;
+    background-color: var(--cur-pg);
+    text-align: right;
+    color:rgba(27,30,60, 0.3)
+}
+
+.dropdown { 
+    display: inline-block;
+    position: absolute;
+  } 
+
+.dropdown-menu {
+    display: none;
+    padding-top: 30%;
+    position: absolute;
+    right: 0;
+    overflow: auto;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start;
+}
+
+.grid-item {
+    padding: 8px;
+}
+
+.dropdown { 
+    display: inline-block;
+    position: absolute;
+  } 
+
+.dropdown-menu {
+    display: none;
+    padding-top: 30%;
+    position: absolute;
+    right: 0;
+    overflow: auto;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+/* .custom-select option {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+} */
+
+
+/* ----------------- LOGIN ----------------------- */
+
+ .background {
+    background: url("../images/login_background.png");
+    width: 100%;
+    height: 100%;
+}
+
+.login-container {
+    width: 800px;
+    background-color: #868BB5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+    align-content:center;
+    margin-top: 150px;;
+}
+
+.company-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.login-form {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #868BB5;
+}
+
+.form-group
+{
+    display:grid;
+}
+
+.email-group 
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #CACEED;
+    margin: 20px;
+    
+}
+
+.password-group 
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #CACEED;
+    margin: 0 auto;
+    margin: 20px;
+}
+
+.button-container {
+    display: flex;
+}
+
+.login-btn {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    width: 122px;
+    height: 42px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.signup-btn {
+    background-color: #373E73;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 122px;
+    height: 42px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.email-container {
+    width: 273px;
+    height: 51px;
+    background-color: #CACEED;
+    border-radius: 30px;
+    opacity: 0.5;
+}
+
+.password-container {
+    width: 273px;
+    height: 51px;
+    background-color: #CACEED;
+    border-radius: 30px;
+    opacity: 1;
+    color: black;
+}
+
+.email-input, 
+.password-input {
+    width: 150px;
+    height: 15px;
+}
+
+.email-text, 
+.password-text {
+    color: black;
+    text-align: center;
+}
+
+.forgot-password {
+    font-size: 14px;
+}
+
+.email-grid, 
+.password-grid {
+    display: grid;
+}
+
+.description {
+    display:block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start;
+}
+
+.grid-item {
+    padding: 8px;
+}
+
+.ant-select-selector {
+    background-color: #5B6196 !important;
+}
+
+.paragraph {
+    width: 650px; 
+    margin: 0 auto;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    word-break: break-word; 
+    text-align: center; 
+}
+
+.trynow-btn {
+    background-color: #373E73;
+    width: 122px;
+    height: 42px;
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.custom-modal {
+    height: 600px;
+    width: 600px;
+    background-color:#00001a;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.generate-code-text
+{
+    text-align:left;
+}
+
