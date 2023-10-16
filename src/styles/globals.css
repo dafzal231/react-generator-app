@@ -146,6 +146,7 @@ div{
     padding: 40px;
     background-color: var(--cur-pg);
     text-align: right;
+    color:rgba(27,30,60, 0.3)
 }
 
 .dropdown { 
@@ -355,3 +356,20 @@ div{
     padding: 10px;
     font-size: 12px;
 }
+
+.custom-modal {
+    height: 600px;
+    width: 600px;
+    background-color:#00001a;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.generate-code-text
+{
+    text-align:left;
+}
+
